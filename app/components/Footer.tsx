@@ -13,6 +13,7 @@ const footerLinks = [
 const serviceLinks = [
   { href: '/roof-repair', label: 'Roof Repair' },
   { href: '/roof-replacement', label: 'Roof Replacement' },
+  { href: '/storm-damage', label: 'Storm Damage' },
 ];
 
 export default function Footer() {

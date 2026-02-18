@@ -24,7 +24,7 @@ export default function Hero() {
             Free Inspections & Same-Day Estimates
           </p>
           <p className="mt-2 text-slate-300">
-            Quality roof repair and replacement. Licensed, insured, and ready to protect your home.
+            Serving Providence, Cranston, Warwick & all of Rhode Island. Licensed, insured, and ready to protect your home.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="#contact" className="btn-primary bg-amber-500 text-primary hover:bg-amber-400 focus:ring-amber-500">

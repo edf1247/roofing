@@ -16,29 +16,29 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: '1',
-    before: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
-    after: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    before: 'https://eriehome.com/wp-content/uploads/2023/09/1-After-800x450.jpg',
+    after: 'https://eriehome.com/wp-content/uploads/2023/09/1-Before.jpg',
     title: 'Full Shingle Replacement',
     description: 'Providence residence—architectural shingles, full tear-off and replacement.',
   },
   {
     id: '2',
-    before: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
-    after: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+    before: 'https://eriehome.com/wp-content/uploads/2023/09/11-After.jpg',
+    after: 'https://eriehome.com/wp-content/uploads/2023/09/11-Before.jpg',
     title: 'Storm Damage Repair',
     description: 'Post-storm repair and re-shingling of damaged sections.',
   },
   {
     id: '3',
-    before: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80',
-    after: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&q=80',
+    before: 'https://eriehome.com/wp-content/uploads/2023/09/13-After.jpg',
+    after: 'https://eriehome.com/wp-content/uploads/2023/09/13-Before.jpg',
     title: 'Leak Repair & Flashing',
     description: 'Valley and flashing repair with matching shingles.',
   },
   {
     id: '4',
-    before: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80',
-    after: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    before: 'https://eriehome.com/wp-content/uploads/2023/09/6-After.jpg',
+    after: 'https://eriehome.com/wp-content/uploads/2023/09/6-Before.jpg',
     title: 'Aged Roof Replacement',
     description: '20-year roof replaced with premium architectural shingles.',
   },
@@ -59,7 +59,7 @@ function BeforeAfterSlider({ item }: { item: GalleryItem }) {
 
   return (
     <div
-      className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-200"
+      className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-xl bg-slate-200 mx-auto"
       onMouseMove={handleMove}
       onMouseLeave={() => setPosition(50)}
       onTouchStart={(e) => {
@@ -81,7 +81,7 @@ function BeforeAfterSlider({ item }: { item: GalleryItem }) {
           alt={`${item.title} - before`}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="(max-width: 672px) 100vw, 672px"
         />
       </div>
       <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
@@ -90,7 +90,7 @@ function BeforeAfterSlider({ item }: { item: GalleryItem }) {
           alt={`${item.title} - after`}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="(max-width: 672px) 100vw, 672px"
         />
       </div>
       <div
@@ -127,7 +127,7 @@ export default function BeforeAfter() {
             See the quality of our work. Real projects from real customers.
           </p>
         </AnimatedSection>
-        <AnimatedSection className="mt-12">
+        <AnimatedSection className="mt-12 max-w-2xl mx-auto">
           <BeforeAfterSlider item={item} />
           <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>

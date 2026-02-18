@@ -1,5 +1,6 @@
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
+import TrustBadges from './components/TrustBadges';
 import EmergencyBanner from './components/EmergencyBanner';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
@@ -11,7 +12,6 @@ import ServiceAreas from './components/ServiceAreas';
 import FAQ from './components/FAQ';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import StickyCallButton from './components/StickyCallButton';
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
+        <TrustBadges />
         <EmergencyBanner />
         <Services />
         <WhyChooseUs />
@@ -31,7 +32,6 @@ export default function Home() {
         <ContactForm />
         <Footer />
       </main>
-      <StickyCallButton />
     </>
   );
 }

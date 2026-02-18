@@ -7,19 +7,19 @@ const reviews = [
     name: 'Sarah M.',
     location: 'Providence',
     rating: 5,
-    text: 'After storm damage, they came out same day for an inspection. The crew was professional, on time, and left our yard spotless. The new roof looks great and we have peace of mind.',
+    text: 'Same-day inspection after the storm. Crew was on time and left the yard clean. New roof looks great.',
   },
   {
     name: 'James T.',
     location: 'Cranston',
     rating: 5,
-    text: 'We needed a full roof replacement. They explained our options clearly, helped with the insurance claim, and finished ahead of schedule. Highly recommend.',
+    text: 'Full replacement—helped with insurance and finished ahead of schedule. Highly recommend.',
   },
   {
     name: 'Linda K.',
     location: 'Warwick',
     rating: 5,
-    text: 'Had a leak that multiple companies couldn\'t find. These guys found it, fixed it properly, and the price was fair. True professionals.',
+    text: 'They found the leak others missed, fixed it right, fair price. True pros.',
   },
 ];
 

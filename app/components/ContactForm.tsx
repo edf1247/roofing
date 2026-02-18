@@ -6,6 +6,12 @@ import AnimatedSection from './AnimatedSection';
 
 export default function ContactForm() {
   const [wantsInspection, setWantsInspection] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
 
   return (
     <section
@@ -44,9 +50,14 @@ export default function ContactForm() {
             </div>
           </AnimatedSection>
           <AnimatedSection>
+            {submitted && (
+              <div className="mb-6 rounded-xl border border-accent/30 bg-accent/5 px-6 py-4 text-accent">
+                <p className="font-semibold">Thanks! We&apos;ll call you within 24 hours to schedule your free inspection.</p>
+              </div>
+            )}
             <form
               className="rounded-xl bg-white p-6 shadow-sm sm:p-8"
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={handleSubmit}
               noValidate
             >
               <div className="grid gap-4 sm:grid-cols-2">

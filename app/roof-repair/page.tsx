@@ -2,7 +2,6 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import StickyCallButton from '../components/StickyCallButton';
 import { Wrench, CheckCircle, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -95,7 +94,6 @@ export default function RoofRepairPage() {
         </section>
       </main>
       <Footer />
-      <StickyCallButton />
     </>
   );
 }
